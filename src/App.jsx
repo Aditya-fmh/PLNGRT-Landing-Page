@@ -5,7 +5,7 @@ function App() {
   return (
     <Flowbite>
       <header>
-      <Navbar fluid className="bg-gray-200 dark:bg-gray-800 border-gray-200 px-4 lg:px-6 py-2.5">
+      <Navbar fluid className="bg-gray-200 dark:bg-gray-800 border-gray-200 px-6 lg:px-72 py-2.5">
         <Navbar.Brand href="/">
           <img
             src="https://i.imgur.com/gESvrE4.png"
