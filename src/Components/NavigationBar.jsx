@@ -84,7 +84,7 @@ function NavigationBar() {
               </Dropdown.Item>
               </Dropdown>
           </Navbar.Link>
-          <Navbar.Link href="/contact" className="flex h-full items-center">
+          <Navbar.Link to="/contact" className="flex h-full items-center">
             Kontak
           </Navbar.Link>
         </Navbar.Collapse>
