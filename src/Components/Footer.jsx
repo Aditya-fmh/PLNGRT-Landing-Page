@@ -1,6 +1,6 @@
 import { Footer } from "flowbite-react"
 
-function Foot() {
+function FooterBar() {
     return (
         <Footer className="p-4 sm:p-6 rounded-none bg-gray-200 dark:bg-gray-800 border-gray-200">
         <div className="mx-auto w-full max-w-screen-xl">
@@ -48,4 +48,4 @@ function Foot() {
     )
 }
 
-export default Foot
+export default FooterBar

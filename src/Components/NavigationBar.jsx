@@ -1,6 +1,6 @@
 import { Navbar, Dropdown, DarkThemeToggle, Button } from "flowbite-react";
 
-function Navig() {
+function NavigationBar() {
     return (
         <header>
       <Navbar fluid className="bg-gray-200 dark:bg-gray-800 border-gray-200 px-6 lg:px-10 py-2.5">
@@ -26,7 +26,7 @@ function Navig() {
         >
           <Navbar.Link
             active
-            href="#"
+            href="/"
             className="flex h-full items-center bg-transparent border-b md:border-0 dark:border-gray-700"
           >
             Home
@@ -84,7 +84,7 @@ function Navig() {
               </Dropdown.Item>
               </Dropdown>
           </Navbar.Link>
-          <Navbar.Link href="#" className="flex h-full items-center">
+          <Navbar.Link href="/contact" className="flex h-full items-center">
             Kontak
           </Navbar.Link>
         </Navbar.Collapse>
@@ -93,4 +93,4 @@ function Navig() {
     )
 }
 
-export default Navig
+export default NavigationBar
