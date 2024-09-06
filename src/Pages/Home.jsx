@@ -23,15 +23,14 @@ function Home() {
                   </p>
                 </div>
                 <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-                  <Button size="lg" href="/catalog">
+                  <Button size="lg" href="/">
                     Buka Katalog
                   </Button>
                   <Button
                     size="lg"
                     color="gray"
                     className="[&>span]:items-center"
-                    href="https://wa.link/w9fvxc"
-                    target="blank"
+                    href="/contact"
                     outline
                   >
                     <svg

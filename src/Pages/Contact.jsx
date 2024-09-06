@@ -10,10 +10,11 @@ function Contact() {
         <div className="mx-auto max-w-screen-xl px-4 py-8 sm:py-16 lg:px-6">
           <div className="mx-auto mb-8 max-w-screen-sm px-4 text-center lg:mb-16 lg:px-6">
             <h2 className="mb-4 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
-            Kontak
+              Kontak
             </h2>
             <p className="text-gray-600 dark:text-gray-400 sm:text-xl">
-            Punya pertanyaan? Atau mau konsultasi dulu sebelum membeli? Jangan sungkan untuk menghubungi kami.
+              Punya pertanyaan? Atau mau konsultasi dulu sebelum membeli? Jangan
+              sungkan untuk menghubungi kami.
             </p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-8">
@@ -91,7 +92,8 @@ function Contact() {
                   Alamat Toko:
                 </p>
                 <p className="text-gray-500 dark:text-gray-400">
-                Jl. Guntur, Komplek Ruko IBC (Intan Bisnis Center), Blok D-19, Pakuwon, Kec. Garut Kota, Kabupaten Garut, Jawa Barat 44117
+                  Jl. Guntur, Komplek Ruko IBC (Intan Bisnis Center), Blok D-19,
+                  Pakuwon, Kec. Garut Kota, Kabupaten Garut, Jawa Barat 44117
                 </p>
               </div>
               <div>
@@ -109,10 +111,17 @@ function Contact() {
                   Kontak WhatsApp:
                 </p>
                 <p className="mb-3 text-gray-500 dark:text-gray-400">
-                Silahkan untuk menghubungi kami untuk konsultasi dan tanya-tanya seputar laptop
+                  Silahkan untuk menghubungi kami untuk konsultasi dan
+                  tanya-tanya seputar laptop
                 </p>
                 <p className="text-primary-600 dark:text-primary-500 font-semibold">
-                  <a href="" target="blank" className="hover:underline text-2xl text-blue-600">0821-1115-5411</a>
+                  <a
+                    href=""
+                    target="blank"
+                    className="text-2xl text-blue-600 hover:underline"
+                  >
+                    0821-1115-5411
+                  </a>
                 </p>
               </div>
             </div>

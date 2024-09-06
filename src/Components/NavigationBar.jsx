@@ -1,9 +1,12 @@
 import { Navbar, Dropdown, DarkThemeToggle, Button } from "flowbite-react";
 
 function NavigationBar() {
-    return (
-        <header>
-      <Navbar fluid className="bg-gray-200 dark:bg-gray-800 border-gray-200 px-6 lg:px-10 py-2.5">
+  return (
+    <header>
+      <Navbar
+        fluid
+        className="border-gray-200 bg-gray-200 px-6 py-2.5 dark:bg-gray-800 lg:px-10"
+      >
         <Navbar.Brand href="/">
           <img
             src="https://i.imgur.com/gESvrE4.png"
@@ -13,10 +16,14 @@ function NavigationBar() {
         </Navbar.Brand>
         <div className="flex items-center gap-3 lg:order-2">
           <DarkThemeToggle />
-          <Button color="info" href="https://maps.app.goo.gl/NnkTvKUpga2HyvyNA" target="blank">
+          <Button
+            color="info"
+            href="https://maps.app.goo.gl/NnkTvKUpga2HyvyNA"
+            target="blank"
+          >
             Lokasi
           </Button>
-          <Navbar.Toggle theme={{icon: "h-5 w-5 shrink-0"}} />
+          <Navbar.Toggle theme={{ icon: "h-5 w-5 shrink-0" }} />
         </div>
         <Navbar.Collapse
           theme={{
@@ -27,7 +34,7 @@ function NavigationBar() {
           <Navbar.Link
             active
             href="/"
-            className="flex h-full items-center bg-transparent border-b md:border-0 dark:border-gray-700"
+            className="flex h-full items-center border-b bg-transparent dark:border-gray-700 md:border-0"
           >
             Home
           </Navbar.Link>
@@ -46,8 +53,9 @@ function NavigationBar() {
             >
               <Dropdown.Item theme={{ base: "" }}>
                 <a
-                  href="https://www.tokopedia.com/puslapnusgrt" target="blank"
-                  className="text-sm flex w-full items-center px-4 py-2 text-gray-500 hover:text-primary-600 dark:text-gray-400 dark:hover:text-white"
+                  href="https://www.tokopedia.com/puslapnusgrt"
+                  target="blank"
+                  className="hover:text-primary-600 flex w-full items-center px-4 py-2 text-sm text-gray-500 dark:text-gray-400 dark:hover:text-white"
                 >
                   <svg
                     aria-hidden
@@ -67,8 +75,9 @@ function NavigationBar() {
               </Dropdown.Item>
               <Dropdown.Item theme={{ base: "" }}>
                 <a
-                  href="https://shopee.co.id/pusatlaptopnusantaragarut" target="blank"
-                  className="text-sm flex w-full items-center px-4 py-2 text-gray-500 hover:text-primary-600 dark:text-gray-400 dark:hover:text-white"
+                  href="https://shopee.co.id/pusatlaptopnusantaragarut"
+                  target="blank"
+                  className="hover:text-primary-600 flex w-full items-center px-4 py-2 text-sm text-gray-500 dark:text-gray-400 dark:hover:text-white"
                 >
                   <svg
                     aria-hidden
@@ -82,7 +91,7 @@ function NavigationBar() {
                   Shopee
                 </a>
               </Dropdown.Item>
-              </Dropdown>
+            </Dropdown>
           </Navbar.Link>
           <Navbar.Link href="/contact" className="flex h-full items-center">
             Kontak
@@ -90,7 +99,7 @@ function NavigationBar() {
         </Navbar.Collapse>
       </Navbar>
     </header>
-    )
+  );
 }
 
-export default NavigationBar
+export default NavigationBar;
