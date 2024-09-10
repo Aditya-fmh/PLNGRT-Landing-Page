@@ -1,11 +1,11 @@
-import { Navbar, Dropdown, DarkThemeToggle, DropdownDivider, DropdownItem } from "flowbite-react";
+import { Navbar, Button, DarkThemeToggle } from "flowbite-react";
 
 function NavigationBar() {
   return (
     <header>
       <Navbar
         fluid
-        className="border-gray-200 bg-gray-200 px-6 py-2.5 dark:bg-gray-800 lg:px-10 sm:px-1"
+        className="border-gray-200 bg-gray-200 px-6 py-2.5 dark:bg-gray-800 sm:px-1 lg:px-10"
       >
         <Navbar.Brand href="/">
           <img
@@ -14,32 +14,11 @@ function NavigationBar() {
             alt="Pusat Laptop Nusantara Logo"
           />
         </Navbar.Brand>
-        <div className="flex items-center gap-1 lg:order-2">
+        <div className="flex items-center lg:order-2">
           <DarkThemeToggle />
-          <Dropdown dismissOnClick={false} label="Find Us">
-            <Dropdown.Item
-              as="a"
-              href="https://www.tokopedia.com/puslapnusgrt"
-              target="_blank"
-            >
-              Tokopedia
-            </Dropdown.Item>
-            <Dropdown.Item
-              as="a"
-              href="https://shopee.co.id/pusatlaptopnusantaragarut"
-              target="_blank"
-            >
-              Shopee
-            </Dropdown.Item>
-            <DropdownDivider />
-            <Dropdown.Item
-              as="a"
-              href="https://maps.app.goo.gl/qSSpDhuFQMXFuZiq7"
-              target="_blank"
-            >
-              Google Maps
-            </Dropdown.Item>
-          </Dropdown>
+          <Button as="a" href="https://maps.app.goo.gl/Vww45g3yiZ34VZNX9" target="_blank">
+            Lokasi
+          </Button>
           <Navbar.Toggle theme={{ icon: "h-5 w-5 shrink-0" }} />
         </div>
         <Navbar.Collapse
