@@ -1,7 +1,7 @@
 import { Card, Button, Modal } from "flowbite-react";
 import { useState } from "react";
 
-import dell5470Image from "../assets/5470.jpg";
+import dell5470Image from "../assets/5450.jpg";
 import dell5480Image from "../assets/5480.jpg";
 import dell5490Image from "../assets/5490.jpg";
 import dell7470Image from "../assets/7470.jpg";
