@@ -2,6 +2,13 @@ import { Button, Flowbite, Carousel } from "flowbite-react";
 import NavigationBar from "../Components/NavigationBar.jsx";
 import Footer from "../Components/Footer.jsx";
 
+// Import your images
+import hero1 from "../assets/hero-1.jpg";
+import hero2 from "../assets/hero-2.jpg";
+import hero3 from "../assets/hero-3.jpg";
+import hero4 from "../assets/hero-4.jpg";
+import hero5 from "../assets/hero-5.jpg";
+
 function Home() {
   return (
     <>
@@ -47,11 +54,11 @@ function Home() {
                 </div>
               </div>
               <Carousel className="h-64 md:h-96">
-                <img src="../assets/hero-1.jpg" className="rounded-lg" alt="" />
-                <img src="./assets/hero-2.jpg" className="rounded-lg" alt="" />
-                <img src="./assets/hero-3.jpg" className="rounded-lg" alt="" />
-                <img src="./assets/hero-4.jpg" className="rounded-lg" alt="" />
-                <img src="./assets/hero-5.jpg" className="rounded-lg" alt="" />
+                <img src={hero1} className="rounded-lg" alt="" />
+                <img src={hero2} className="rounded-lg" alt="" />
+                <img src={hero3} className="rounded-lg" alt="" />
+                <img src={hero4} className="rounded-lg" alt="" />
+                <img src={hero5} className="rounded-lg" alt="" />
               </Carousel>
             </div>
           </div>
