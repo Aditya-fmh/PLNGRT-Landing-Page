@@ -1,6 +1,9 @@
 import { Card, Button, Modal } from "flowbite-react";
 import { useState } from "react";
 
+import R73i5Image from "../assets/R73 i5.jpg";
+import R73i7Image from "../assets/R73 i7.jpg";
+
 function KatalogToshiba() {
     const [openModals, setOpenModals] = useState({
         toshibaR73i5: false,
@@ -23,7 +26,7 @@ function KatalogToshiba() {
           <Card
             className="max-w-sm"
             imgAlt="Toshiba Dynabook R73 i5"
-            imgSrc="./src/assets/R73 i5.jpg"
+            imgSrc={R73i5Image}
           >
             <a href="#">
               <h5 className="text-center text-xl tracking-tight text-gray-900 dark:text-white">
@@ -71,7 +74,7 @@ function KatalogToshiba() {
           <Card
             className="max-w-sm"
             imgAlt="Toshiba Dynabook R73 i7"
-            imgSrc="./src/assets/R73 i5.jpg"
+            imgSrc={R73i7Image}
           >
             <a href="#">
               <h5 className="text-center text-xl tracking-tight text-gray-900 dark:text-white">

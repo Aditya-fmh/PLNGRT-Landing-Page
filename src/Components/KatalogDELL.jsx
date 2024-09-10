@@ -1,6 +1,11 @@
 import { Card, Button, Modal } from "flowbite-react";
 import { useState } from "react";
 
+import dell5470Image from "../assets/5470.jpg";
+import dell5480Image from "../assets/5480.jpg";
+import dell5490Image from "../assets/5490.jpg";
+import dell7470Image from "../assets/7470.jpg";
+
 function KatalogDELL() {
   const [openModals, setOpenModals] = useState({
     dell5470: false,
@@ -25,7 +30,7 @@ function KatalogDELL() {
         <Card
           className="max-w-sm"
           imgAlt="DELL 5470"
-          imgSrc="./src/assets/5450.jpg"
+          imgSrc={dell5470Image}
         >
           <a href="#">
             <h5 className="text-center text-xl tracking-tight text-gray-900 dark:text-white">
@@ -73,7 +78,7 @@ function KatalogDELL() {
         <Card
           className="max-w-sm"
           imgAlt="DELL 5480"
-          imgSrc="./src/assets/5480.jpg"
+          imgSrc={dell5480Image}
         >
           <a href="#">
             <h5 className="text-center text-xl tracking-tight text-gray-900 dark:text-white">
@@ -120,7 +125,7 @@ function KatalogDELL() {
         <Card
           className="max-w-sm"
           imgAlt="DELL 5490"
-          imgSrc="./src/assets/5490.jpg"
+          imgSrc={dell5490Image}
         >
           <a href="#">
             <h5 className="text-center text-xl tracking-tight text-gray-900 dark:text-white">
@@ -167,7 +172,7 @@ function KatalogDELL() {
         <Card
           className="max-w-sm"
           imgAlt="DELL 7470"
-          imgSrc="./src/assets/7470.jpg"
+          imgSrc={dell7470Image}
         >
           <a href="#">
             <h5 className="text-center text-xl tracking-tight text-gray-900 dark:text-white">

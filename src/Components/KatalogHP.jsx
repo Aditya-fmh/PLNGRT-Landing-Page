@@ -1,6 +1,12 @@
 import { Card, Button, Modal } from "flowbite-react";
 import { useState } from "react";
 
+import hp840G3Image from "../assets/840 G3.jpg";
+import hp640G2Image from "../assets/640 G2.jpg";
+import hp640G4Image from "../assets/640 G4.jpg";
+import hp640G5Image from "../assets/640 G5.jpg";
+import hp6470Image from "../assets/6470.jpg";
+
 function KatalogHP() {
   const [openModals, setOpenModals] = useState({
     hp840G3: false,
@@ -26,7 +32,7 @@ function KatalogHP() {
         <Card
           className="max-w-sm"
           imgAlt="HP EliteBook 840 G3"
-          imgSrc="./src/assets/840 G3.jpg"
+          imgSrc={hp840G3Image}
         >
           <a href="#">
             <h5 className="text-center text-xl tracking-tight text-gray-900 dark:text-white">
@@ -77,7 +83,7 @@ function KatalogHP() {
         <Card
           className="max-w-sm"
           imgAlt="HP ProBook 640 G2"
-          imgSrc="./src/assets/840 G3.jpg"
+          imgSrc={hp640G2Image}
         >
           <a href="#">
             <h5 className="text-center text-xl tracking-tight text-gray-900 dark:text-white">
@@ -128,7 +134,7 @@ function KatalogHP() {
         <Card
           className="max-w-sm"
           imgAlt="HP ProBook 640 G4"
-          imgSrc="./src/assets/640 G4.jpg"
+          imgSrc={hp640G4Image}
         >
           <a href="#">
             <h5 className="text-center text-xl tracking-tight text-gray-900 dark:text-white">
@@ -179,7 +185,7 @@ function KatalogHP() {
         <Card
           className="max-w-sm"
           imgAlt="HP ProBook 640 G5"
-          imgSrc="./src/assets/640 G4.jpg"
+          imgSrc={hp640G5Image}
         >
           <a href="#">
             <h5 className="text-center text-xl tracking-tight text-gray-900 dark:text-white">
@@ -230,7 +236,7 @@ function KatalogHP() {
         <Card
           className="max-w-sm"
           imgAlt="HP ProBook 6470"
-          imgSrc="./src/assets/6470.jpg"
+          imgSrc={hp6470Image}
         >
           <a href="#">
             <h5 className="text-center text-xl tracking-tight text-gray-900 dark:text-white">

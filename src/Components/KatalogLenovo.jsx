@@ -1,6 +1,14 @@
 import { Card, Button, Modal } from "flowbite-react";
 import { useState } from "react";
 
+import L450Image from "../assets/L450.jpg";
+import L460Image from "../assets/L460.jpg";
+import T470Image from "../assets/T470.jpg";
+import T470s1Image from "../assets/T470s 1.jpg";
+import T470s2Image from "../assets/T470s 2.jpg";
+import T470s3Image from "../assets/T470s 3.jpg";
+import T480Image from "../assets/T480.jpg";
+
 function KatalogLenovo () {
     const [openModal1, setOpenModal1] = useState(false);
     const [openModal2, setOpenModal2] = useState(false);
@@ -19,7 +27,7 @@ function KatalogLenovo () {
           <Card
             className="max-w-sm"
             imgAlt="Lenovo L450"
-            imgSrc="./src/assets/L450.jpg"
+            imgSrc={L450Image}
           >
             <a href="#">
               <h5 className="text-center text-xl tracking-tight text-gray-900 dark:text-white">
@@ -66,7 +74,7 @@ function KatalogLenovo () {
           <Card
             className="max-w-sm"
             imgAlt="Lenovo L460"
-            imgSrc="./src/assets/L460.jpg"
+            imgSrc={L460Image}
           >
             <a href="#">
               <h5 className="text-center text-xl tracking-tight text-gray-900 dark:text-white">
@@ -113,7 +121,7 @@ function KatalogLenovo () {
           <Card
             className="max-w-sm"
             imgAlt="Lenovo T470"
-            imgSrc="./src/assets/T470.jpg"
+            imgSrc={T470Image}
           >
             <a href="#">
               <h5 className="text-center text-xl tracking-tight text-gray-900 dark:text-white">
@@ -160,7 +168,7 @@ function KatalogLenovo () {
           <Card
             className="max-w-sm"
             imgAlt="Lenovo T470s 8/256"
-            imgSrc="./src/assets/T470s 1.jpg"
+            imgSrc={T470s1Image}
           >
             <a href="#">
               <h5 className="text-center text-xl tracking-tight text-gray-900 dark:text-white">
@@ -207,7 +215,7 @@ function KatalogLenovo () {
           <Card
             className="max-w-sm"
             imgAlt="Lenovo T470s 8/512"
-            imgSrc="./src/assets/T470s 1.jpg"
+            imgSrc={T470s1Image}
           >
             <a href="#">
               <h5 className="text-center text-xl tracking-tight text-gray-900 dark:text-white">
@@ -254,7 +262,7 @@ function KatalogLenovo () {
           <Card
             className="max-w-sm"
             imgAlt="Lenovo T470s 12/256"
-            imgSrc="./src/assets/T470s 2.jpg"
+            imgSrc={T470s2Image}
           >
             <a href="#">
               <h5 className="text-center text-xl tracking-tight text-gray-900 dark:text-white">
@@ -301,7 +309,7 @@ function KatalogLenovo () {
           <Card
             className="max-w-sm"
             imgAlt="Lenovo T470s 20/256"
-            imgSrc="./src/assets/T470s 3.jpg"
+            imgSrc={T470s3Image}
           >
             <a href="#">
               <h5 className="text-center text-xl tracking-tight text-gray-900 dark:text-white">
@@ -348,7 +356,7 @@ function KatalogLenovo () {
           <Card
             className="max-w-sm"
             imgAlt="Lenovo T480"
-            imgSrc="./src/assets/T480.jpg"
+            imgSrc={T480Image}
           >
             <a href="#">
               <h5 className="text-center text-xl tracking-tight text-gray-900 dark:text-white">
