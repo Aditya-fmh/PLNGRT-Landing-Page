@@ -47,7 +47,7 @@ function Home() {
                 </div>
               </div>
               <Carousel className="h-64 md:h-96">
-                <img src="./assets/hero-1.jpg" className="rounded-lg" alt="" />
+                <img src="../assets/hero-1.jpg" className="rounded-lg" alt="" />
                 <img src="./assets/hero-2.jpg" className="rounded-lg" alt="" />
                 <img src="./assets/hero-3.jpg" className="rounded-lg" alt="" />
                 <img src="./assets/hero-4.jpg" className="rounded-lg" alt="" />
