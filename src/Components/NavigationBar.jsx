@@ -1,6 +1,9 @@
 import { Navbar, Button, DarkThemeToggle } from "flowbite-react";
+import { useLocation } from "react-router-dom";
 
 function NavigationBar() {
+  const location = useLocation();
+
   return (
     <header>
       <Navbar
@@ -28,16 +31,24 @@ function NavigationBar() {
           className="lg:order-1"
         >
           <Navbar.Link
-            active
+            active={location.pathname === "/"}
             href="/"
             className="flex h-full items-center border-b bg-transparent dark:border-gray-700 md:border-0"
           >
             Home
           </Navbar.Link>
-          <Navbar.Link href="/catalogue" className="flex h-full items-center">
+          <Navbar.Link
+            active={location.pathname === "/catalogue"}
+            href="/catalogue"
+            className="flex h-full items-center"
+          >
             Katalog
           </Navbar.Link>
-          <Navbar.Link href="/contact" className="flex h-full items-center">
+          <Navbar.Link
+            active={location.pathname === "/contact"}
+            href="/contact"
+            className="flex h-full items-center"
+          >
             Kontak
           </Navbar.Link>
         </Navbar.Collapse>
