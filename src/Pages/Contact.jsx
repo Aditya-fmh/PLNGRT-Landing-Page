@@ -116,8 +116,8 @@ function Contact() {
                 </p>
                 <p className="text-primary-600 dark:text-primary-500 font-semibold">
                   <a
-                    href=""
-                    target="blank"
+                    href="https://wa.link/dhurui"
+                    target="_blank"
                     className="text-2xl text-blue-600 hover:underline"
                   >
                     0821-1115-5411

@@ -47,10 +47,16 @@ function FooterBar() {
                 className="text-base text-gray-600 dark:text-gray-400"
                 col
               >
-                <Footer.Link href="https://www.tokopedia.com/puslapnusgrt">
+                <Footer.Link
+                  href="https://www.tokopedia.com/puslapnusgrt"
+                  target="_blank"
+                >
                   Tokopedia
                 </Footer.Link>
-                <Footer.Link href="https://shopee.co.id/pusatlaptopnusantaragarut">
+                <Footer.Link
+                  href="https://shopee.co.id/pusatlaptopnusantaragarut"
+                  target="_blank"
+                >
                   Shopee
                 </Footer.Link>
               </Footer.LinkGroup>

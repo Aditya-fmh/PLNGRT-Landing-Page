@@ -23,7 +23,7 @@ function Home() {
                   </p>
                 </div>
                 <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-                  <Button size="lg" href="/">
+                  <Button size="lg" href="/catalogue">
                     Buka Katalog
                   </Button>
                   <Button
@@ -47,11 +47,11 @@ function Home() {
                 </div>
               </div>
               <Carousel className="h-64 md:h-96">
-                <img src="./hero-1.jpg" className="rounded-lg" alt="" />
-                <img src="./hero-2.jpg" className="rounded-lg" alt="" />
-                <img src="./hero-3.jpg" className="rounded-lg" alt="" />
-                <img src="./hero-4.jpg" className="rounded-lg" alt="" />
-                <img src="./hero-5.jpg" className="rounded-lg" alt="" />
+                <img src="./src/assets/hero-1.jpg" className="rounded-lg" alt="" />
+                <img src="./src/assets/hero-2.jpg" className="rounded-lg" alt="" />
+                <img src="./src/assets/hero-3.jpg" className="rounded-lg" alt="" />
+                <img src="./src/assets/hero-4.jpg" className="rounded-lg" alt="" />
+                <img src="./src/assets/hero-5.jpg" className="rounded-lg" alt="" />
               </Carousel>
             </div>
           </div>
@@ -154,7 +154,7 @@ function Home() {
                   <span className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200">
                     <svg
                       className="h-6 w-6"
-                      fill="currentColor"
+                      fill="currentColor"             
                       viewBox="0 0 20 20"
                       xmlns="http://www.w3.org/2000/svg"
                     >
