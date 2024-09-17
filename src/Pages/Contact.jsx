@@ -3,6 +3,15 @@ import Footer from "../Components/Footer.jsx";
 import { Button, Label, TextInput, Textarea } from "flowbite-react";
 
 function Contact() {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    const message = `*Nama Depan:* ${formData.get('first-name')}\n*Nama Belakang:* ${formData.get('last-name')}\n*Topik Pesan:* ${formData.get('topic')}\n*Nomor Handphone:* ${formData.get('phone-number')}\n*Pesan:*\n${formData.get('message')}`;
+    const whatsappNumber = '+6288221957963';
+    const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappLink, '_blank');
+  };
+
   return (
     <>
       <NavigationBar />
@@ -22,18 +31,19 @@ function Contact() {
               <form
                 action="#"
                 className="mx-auto grid max-w-screen-md grid-cols-1 gap-8 sm:grid-cols-2"
+                onSubmit={handleSubmit}
               >
                 <div className="grid grid-cols-1 gap-2">
                   <Label htmlFor="first-name" className="dark:text-white">
                     Nama Depan
                   </Label>
-                  <TextInput id="first-name" placeholder="Nama" required />
+                  <TextInput id="first-name" name="first-name" placeholder="Nama" required />
                 </div>
                 <div className="grid grid-cols-1 gap-2">
                   <Label htmlFor="last-name" className="dark:text-white">
                     Nama Belakang
                   </Label>
-                  <TextInput id="last-name" placeholder="Anda" />
+                  <TextInput id="last-name" name="last-name" placeholder="Anda" />
                 </div>
                 <div className="grid grid-cols-1 gap-2">
                   <Label htmlFor="topic" className="dark:text-white">
@@ -41,6 +51,7 @@ function Contact() {
                   </Label>
                   <TextInput
                     id="topic"
+                    name="topic"
                     placeholder="Konsultasi, Tanya Harga, Dll"
                     required
                     type="topic"
@@ -52,6 +63,7 @@ function Contact() {
                   </Label>
                   <TextInput
                     id="phone-number"
+                    name="phone-number"
                     placeholder="08234567890"
                     required
                     type="number"
@@ -63,6 +75,7 @@ function Contact() {
                   </Label>
                   <Textarea
                     id="message"
+                    name="message"
                     placeholder=""
                     rows={6}
                     className="text-sm"
