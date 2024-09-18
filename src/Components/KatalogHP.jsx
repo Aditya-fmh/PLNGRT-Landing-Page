@@ -1,16 +1,14 @@
 import { Card, Button, Modal } from "flowbite-react";
 import { useState } from "react";
 
-import hp840G3Image from "../assets/840 G3.jpg";
-import hp640G2Image from "../assets/840 G3.jpg";
-import hp640G4Image from "../assets/640 G4.jpg";
-import hp640G5Image from "../assets/640 G4.jpg";
-import hp6470Image from "../assets/6470.jpg";
+import hp840G2Image from "../assets/840G2.png";
+import hp640G4Image from "../assets/640G4.png";
+import hp640G5Image from "../assets/640G5.png";
+import hp6470Image from "../assets/6470.png";
 
 function KatalogHP() {
   const [openModals, setOpenModals] = useState({
-    hp840G3: false,
-    hp640G2: false,
+    hp840G2: false,
     hp640G4: false,
     hp640G5: false,
     hp6470: false,
@@ -31,23 +29,23 @@ function KatalogHP() {
       <div className="flex flex-wrap justify-center gap-8">
         <Card
           className="max-w-sm"
-          imgAlt="HP EliteBook 840 G3"
-          imgSrc={hp840G3Image}
+          imgAlt="HP EliteBook 840 G2"
+          imgSrc={hp840G2Image}
         >
           <a href="#">
             <h5 className="text-center text-xl tracking-tight text-gray-900 dark:text-white">
-              HP EliteBook 840 G3
+              HP EliteBook 840 G2
             </h5>
           </a>
           <h5 className="text-center text-xl font-bold tracking-tight text-gray-900 dark:text-white">
             Rp3.600.000
           </h5>
-          <Button onClick={() => toggleModal("hp840G3")}>Detail Barang</Button>
+          <Button onClick={() => toggleModal("hp840G2")}>Detail Barang</Button>
           <Modal
-            show={openModals.hp840G3}
-            onClose={() => toggleModal("hp840G3")}
+            show={openModals.hp840G2}
+            onClose={() => toggleModal("hp840G2")}
           >
-            <Modal.Header>HP EliteBook 840 G3</Modal.Header>
+            <Modal.Header>HP EliteBook 840 G2</Modal.Header>
             <Modal.Body>
               <div className="space-y-6">
                 <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
@@ -73,58 +71,7 @@ function KatalogHP() {
               <Button as="a" href="https://wa.link/2n7og6" target="_blank">
                 Beli Sekarang
               </Button>
-              <Button color="gray" onClick={() => toggleModal("hp840G3")}>
-                Kembali
-              </Button>
-            </Modal.Footer>
-          </Modal>
-        </Card>
-
-        <Card
-          className="max-w-sm"
-          imgAlt="HP ProBook 640 G2"
-          imgSrc={hp640G2Image}
-        >
-          <a href="#">
-            <h5 className="text-center text-xl tracking-tight text-gray-900 dark:text-white">
-              HP ProBook 640 G2
-            </h5>
-          </a>
-          <h5 className="text-center text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-            Rp3.500.000
-          </h5>
-          <Button onClick={() => toggleModal("hp640G2")}>Detail Barang</Button>
-          <Modal
-            show={openModals.hp640G2}
-            onClose={() => toggleModal("hp640G2")}
-          >
-            <Modal.Header>HP ProBook 640 G2</Modal.Header>
-            <Modal.Body>
-              <div className="space-y-6">
-                <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                  Spesifikasi Laptop: <br />
-                  Processor: Intel Core i5-6300U <br />
-                  RAM: 8 GB DDR4 <br />
-                  Storage: 256 GB SSD <br />
-                  Display: 14"
-                  <br />
-                  OS: Windows 10/11 (Bisa Request)
-                </p>
-                <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                  Kelengkapan: <br />
-                  - Dus Box <br />
-                  - Charger <br />
-                  - Mouse <br />
-                  - Aplikasi Standard <br />
-                  - Garansi Hardware 1 Bulan <br />- Garansi Software 2 Bulan
-                </p>
-              </div>
-            </Modal.Body>
-            <Modal.Footer>
-              <Button as="a" href="https://wa.link/k3m0k2" target="_blank">
-                Beli Sekarang
-              </Button>
-              <Button color="gray" onClick={() => toggleModal("hp640G2")}>
+              <Button color="gray" onClick={() => toggleModal("hp840G2")}>
                 Kembali
               </Button>
             </Modal.Footer>

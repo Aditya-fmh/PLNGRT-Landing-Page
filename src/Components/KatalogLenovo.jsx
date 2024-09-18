@@ -1,13 +1,13 @@
 import { Card, Button, Modal } from "flowbite-react";
 import { useState } from "react";
 
-import L450Image from "../assets/L450.jpg";
-import L460Image from "../assets/L460.jpg";
-import T470Image from "../assets/T470.jpg";
-import T470s1Image from "../assets/T470s 1.jpg";
-import T470s2Image from "../assets/T470s 2.jpg";
-import T470s3Image from "../assets/T470s 3.jpg";
-import T480Image from "../assets/T480.jpg";
+import L450Image from "../assets/L450.png";
+import L460Image from "../assets/L460.png";
+import T470Image from "../assets/T470.png";
+import T470s1Image from "../assets/T470s.png";
+import T470s2Image from "../assets/T470s.png";
+import T470s3Image from "../assets/T470s.png";
+import T480Image from "../assets/T480.png";
 
 function KatalogLenovo () {
     const [openModal1, setOpenModal1] = useState(false);
