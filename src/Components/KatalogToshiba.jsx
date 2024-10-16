@@ -1,8 +1,8 @@
 import { Card, Button, Modal } from "flowbite-react";
 import { useState } from "react";
 
-import R73i5Image from "../assets/R73.png";
-import R73i7Image from "../assets/R73.png";
+import R73i5Image from "../assets/R73.jpg";
+import R73i7Image from "../assets/R73.jpg";
 
 function KatalogToshiba() {
     const [openModals, setOpenModals] = useState({

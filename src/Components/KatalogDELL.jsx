@@ -1,17 +1,17 @@
 import { Card, Button, Modal } from "flowbite-react";
 import { useState } from "react";
 
-import dell5450Image from "../assets/5450.png";
-import dell5480Image from "../assets/5480.png";
-import dell5490Image from "../assets/5490.png";
+import dell5480Image from "../assets/5480.jpg";
+import dell5490Image from "../assets/5490.jpg";
 import dell7470Image from "../assets/7470.jpg";
+import dellvostroImage from "../assets/Vostro 15.jpg";
 
 function KatalogDELL() {
   const [openModals, setOpenModals] = useState({
-    dell5450: false,
     dell5480: false,
     dell5490: false,
     dell7470: false,
+    dellvostro: false,
   });
 
   const toggleModal = (modalId) => {
@@ -29,54 +29,6 @@ function KatalogDELL() {
       <div className="flex flex-wrap justify-center gap-8">
         <Card
           className="max-w-sm"
-          imgAlt="DELL 5450"
-          imgSrc={dell5450Image}
-        >
-          <a href="#">
-            <h5 className="text-center text-xl tracking-tight text-gray-900 dark:text-white">
-              DELL Latitude E5450
-            </h5>
-          </a>
-          <h5 className="text-center text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-            Rp2.800.000
-          </h5>
-          <Button onClick={() => toggleModal("dell5450")}>Detail Barang</Button>
-          <Modal show={openModals.dell5450} onClose={() => toggleModal("dell5450")}>
-            <Modal.Header>DELL Latitude 5450</Modal.Header>
-            <Modal.Body>
-              <div className="space-y-6">
-                <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                  Spesifikasi Laptop: <br />
-                  Processor: Intel Core i5-5200U <br />
-                  RAM: 8 GB DDR3 <br />
-                  Storage: 128 GB SSD <br />
-                  Display: 14"
-                  <br />
-                  OS: Windows 10/11 (Bisa Request)
-                </p>
-                <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                  Kelengkapan: <br />
-                  - Dus Box <br />
-                  - Charger <br />
-                  - Mouse <br />
-                  - Aplikasi Standard <br />
-                  - Garansi Hardware 1 Bulan <br />- Garansi Software 2 Bulan
-                </p>
-              </div>
-            </Modal.Body>
-            <Modal.Footer>
-              <Button as="a" href="https://wa.link/mrdt8l" target="_blank">
-                Beli Sekarang
-              </Button>
-              <Button color="gray" onClick={() => toggleModal("dell5450")}>
-                Kembali
-              </Button>
-            </Modal.Footer>
-          </Modal>
-        </Card>
-
-        <Card
-          className="max-w-sm"
           imgAlt="DELL 5480"
           imgSrc={dell5480Image}
         >
@@ -86,7 +38,7 @@ function KatalogDELL() {
             </h5>
           </a>
           <h5 className="text-center text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-            Rp4.400.000
+            Rp3.750.000
           </h5>
           <Button onClick={() => toggleModal("dell5480")}>Detail Barang</Button>
           <Modal show={openModals.dell5480} onClose={() => toggleModal("dell5480")}>
@@ -133,7 +85,7 @@ function KatalogDELL() {
             </h5>
           </a>
           <h5 className="text-center text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-            Rp4.200.000
+            Rp3.750.000
           </h5>
           <Button onClick={() => toggleModal("dell5490")}>Detail Barang</Button>
           <Modal show={openModals.dell5490} onClose={() => toggleModal("dell5490")}>
@@ -210,6 +162,53 @@ function KatalogDELL() {
                 Beli Sekarang
               </Button>
               <Button color="gray" onClick={() => toggleModal("dell7470")}>
+                Kembali
+              </Button>
+            </Modal.Footer>
+          </Modal>
+        </Card>
+
+        <Card
+          className="max-w-sm"
+          imgAlt="DELL Vostro 15"
+          imgSrc={dellvostroImage}
+        >
+          <a href="#">
+            <h5 className="text-center text-xl tracking-tight text-gray-900 dark:text-white">
+              DELL Vostro 15
+            </h5>
+          </a>
+          <h5 className="text-center text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+            Rp3.500.000
+          </h5>
+          <Button onClick={() => toggleModal("dellvostro")}>Detail Barang</Button>
+          <Modal show={openModals.dellvostro} onClose={() => toggleModal("dellvostro")}>
+            <Modal.Header>DELL Vostro 15</Modal.Header>
+            <Modal.Body>
+              <div className="space-y-6">
+                <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                  Spesifikasi Laptop: <br />
+                  Processor: Intel Core i5-6300U <br />
+                  RAM: 8 GB DDR4 <br />
+                  Storage: 1 TB HDD <br />
+                  Display: 15,6" <br />
+                  OS: Windows 10/11 (Bisa Request)
+                </p>
+                <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                  Kelengkapan: <br />
+                  - Dus Box <br />
+                  - Charger <br />
+                  - Mouse <br />
+                  - Aplikasi Standard <br />
+                  - Garansi Hardware 1 Bulan <br />- Garansi Software 2 Bulan
+                </p>
+              </div>
+            </Modal.Body>
+            <Modal.Footer>
+              <Button as="a" href="https://wa.link/eyze25" target="_blank">
+                Beli Sekarang
+              </Button>
+              <Button color="gray" onClick={() => toggleModal("dellvostro")}>
                 Kembali
               </Button>
             </Modal.Footer>

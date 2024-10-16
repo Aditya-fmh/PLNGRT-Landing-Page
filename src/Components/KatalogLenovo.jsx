@@ -1,13 +1,13 @@
 import { Card, Button, Modal } from "flowbite-react";
 import { useState } from "react";
 
-import L450Image from "../assets/L450.png";
-import L460Image from "../assets/L460.png";
-import T470Image from "../assets/T470.png";
-import T470s1Image from "../assets/T470s.png";
-import T470s2Image from "../assets/T470s.png";
-import T470s3Image from "../assets/T470s.png";
-import T480Image from "../assets/T480.png";
+import L450Image from "../assets/L450.jpg";
+import L460Image from "../assets/L460.jpg";
+import T470Image from "../assets/T470.jpg";
+import T470s1Image from "../assets/T470s.jpg";
+import T470s2Image from "../assets/T470s.jpg";
+import T470s3Image from "../assets/T470s.jpg";
+import T480Image from "../assets/T480.jpg";
 
 function KatalogLenovo () {
     const [openModal1, setOpenModal1] = useState(false);
@@ -24,53 +24,6 @@ function KatalogLenovo () {
           Katalog Laptop Lenovo
         </h2>
         <div className="flex flex-wrap justify-center gap-8">
-          <Card
-            className="max-w-sm"
-            imgAlt="Lenovo L450"
-            imgSrc={L450Image}
-          >
-            <a href="#">
-              <h5 className="text-center text-xl tracking-tight text-gray-900 dark:text-white">
-                Lenovo ThinkPad L450
-              </h5>
-            </a>
-            <h5 className="text-center text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-              Rp3.500.000
-            </h5>
-            <Button onClick={() => setOpenModal1(true)}>Detail Barang</Button>
-            <Modal show={openModal1} onClose={() => setOpenModal1(false)}>
-              <Modal.Header>Lenovo ThinkPad L450</Modal.Header>
-              <Modal.Body>
-                <div className="space-y-6">
-                  <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                    Spesifikasi Laptop: <br />
-                    Processor: Intel Core i5-5200U <br />
-                    RAM: 4 GB DDR3 <br />
-                    Storage: 128 GB SSD <br />
-                    Display: 14" <br />
-                    OS: Windows 10/11 (Bisa Request)
-                  </p>
-                  <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                    Kelengkapan: <br />
-                    - Dus Box <br />
-                    - Charger <br />
-                    - Mouse <br />
-                    - Aplikasi Standard <br />
-                    - Garansi Hardware 1 Bulan <br />- Garansi Software 2 Bulan
-                  </p>
-                </div>
-              </Modal.Body>
-              <Modal.Footer>
-                <Button as="a" href="https://wa.link/9yhfg1" target="_blank">
-                  Beli Sekarang
-                </Button>
-                <Button color="gray" onClick={() => setOpenModal1(false)}>
-                  Kembali
-                </Button>
-              </Modal.Footer>
-            </Modal>
-          </Card>
-
           <Card
             className="max-w-sm"
             imgAlt="Lenovo L460"
@@ -120,53 +73,6 @@ function KatalogLenovo () {
 
           <Card
             className="max-w-sm"
-            imgAlt="Lenovo T470"
-            imgSrc={T470Image}
-          >
-            <a href="#">
-              <h5 className="text-center text-xl tracking-tight text-gray-900 dark:text-white">
-                Lenovo ThinkPad T470
-              </h5>
-            </a>
-            <h5 className="text-center text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-              Rp4.900.000
-            </h5>
-            <Button onClick={() => setOpenModal3(true)}>Detail Barang</Button>
-            <Modal show={openModal3} onClose={() => setOpenModal3(false)}>
-              <Modal.Header>Lenovo ThinkPad T470</Modal.Header>
-              <Modal.Body>
-                <div className="space-y-6">
-                  <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                    Spesifikasi Laptop: <br />
-                    Processor: Intel Core i5-6300U <br />
-                    RAM: 8 GB DDR4 <br />
-                    Storage: 256 GB SSD Sata <br />
-                    Display: 14" Full HD <br />
-                    OS: Windows 10/11 (Bisa Request)
-                  </p>
-                  <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                    Kelengkapan: <br />
-                    - Dus Box <br />
-                    - Charger <br />
-                    - Mouse <br />
-                    - Aplikasi Standard <br />
-                    - Garansi Hardware 1 Bulan <br />- Garansi Software 2 Bulan
-                  </p>
-                </div>
-              </Modal.Body>
-              <Modal.Footer>
-                <Button as="a" href="https://wa.link/0w8qfa" target="_blank">
-                  Beli Sekarang
-                </Button>
-                <Button color="gray" onClick={() => setOpenModal3(false)}>
-                  Kembali
-                </Button>
-              </Modal.Footer>
-            </Modal>
-          </Card>
-
-          <Card
-            className="max-w-sm"
             imgAlt="Lenovo T470s 8/256"
             imgSrc={T470s1Image}
           >
@@ -176,7 +82,7 @@ function KatalogLenovo () {
               </h5>
             </a>
             <h5 className="text-center text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-              Rp4.500.000
+              Rp4.000.000
             </h5>
             <Button onClick={() => setOpenModal4(true)}>Detail Barang</Button>
             <Modal show={openModal4} onClose={() => setOpenModal4(false)}>
@@ -219,11 +125,11 @@ function KatalogLenovo () {
           >
             <a href="#">
               <h5 className="text-center text-xl tracking-tight text-gray-900 dark:text-white">
-                Lenovo ThinkPad T470s 8/512
+                Lenovo ThinkPad T470s 12/512
               </h5>
             </a>
             <h5 className="text-center text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-              Rp4.350.000
+              Rp4.450.000
             </h5>
             <Button onClick={() => setOpenModal5(true)}>Detail Barang</Button>
             <Modal show={openModal5} onClose={() => setOpenModal5(false)}>
@@ -233,7 +139,7 @@ function KatalogLenovo () {
                   <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
                     Spesifikasi Laptop: <br />
                     Processor: Intel Core i7-7600U <br />
-                    RAM: 8 GB DDR4 <br />
+                    RAM: 12 GB DDR4 <br />
                     Storage: 512 GB SSD <br />
                     Display: 14" Full HD <br />
                     OS: Windows 10/11 (Bisa Request)
@@ -249,7 +155,7 @@ function KatalogLenovo () {
                 </div>
               </Modal.Body>
               <Modal.Footer>
-                <Button as="a" href="https://wa.link/shh6f1" target="_blank">
+                <Button as="a" href="https://wa.link/3lk12i" target="_blank">
                   Beli Sekarang
                 </Button>
                 <Button color="gray" onClick={() => setOpenModal5(false)}>
@@ -270,7 +176,7 @@ function KatalogLenovo () {
               </h5>
             </a>
             <h5 className="text-center text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-              Rp4.700.000
+              Rp4.200.000
             </h5>
             <Button onClick={() => setOpenModal6(true)}>Detail Barang</Button>
             <Modal show={openModal6} onClose={() => setOpenModal6(false)}>
@@ -317,7 +223,7 @@ function KatalogLenovo () {
               </h5>
             </a>
             <h5 className="text-center text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-              Rp5.000.000
+              Rp4.500.000
             </h5>
             <Button onClick={() => setOpenModal7(true)}>Detail Barang</Button>
             <Modal show={openModal7} onClose={() => setOpenModal7(false)}>
@@ -347,53 +253,6 @@ function KatalogLenovo () {
                   Beli Sekarang
                 </Button>
                 <Button color="gray" onClick={() => setOpenModal7(false)}>
-                  Kembali
-                </Button>
-              </Modal.Footer>
-            </Modal>
-          </Card>
-
-          <Card
-            className="max-w-sm"
-            imgAlt="Lenovo T480"
-            imgSrc={T480Image}
-          >
-            <a href="#">
-              <h5 className="text-center text-xl tracking-tight text-gray-900 dark:text-white">
-                Lenovo ThinkPad T480
-              </h5>
-            </a>
-            <h5 className="text-center text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-              Rp4.200.000
-            </h5>
-            <Button onClick={() => setOpenModal8(true)}>Detail Barang</Button>
-            <Modal show={openModal8} onClose={() => setOpenModal8(false)}>
-              <Modal.Header>Lenovo ThinkPad T480</Modal.Header>
-              <Modal.Body>
-                <div className="space-y-6">
-                  <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                    Spesifikasi Laptop: <br />
-                    Processor: Intel Core i5-8350U <br />
-                    RAM: 8 GB DDR4 <br />
-                    Storage: 256 GB SSD <br />
-                    Display: 14" Full HD <br />
-                    OS: Windows 10/11 (Bisa Request)
-                  </p>
-                  <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                    Kelengkapan: <br />
-                    - Dus Box <br />
-                    - Charger <br />
-                    - Mouse <br />
-                    - Aplikasi Standard <br />
-                    - Garansi Hardware 1 Bulan <br />- Garansi Software 2 Bulan
-                  </p>
-                </div>
-              </Modal.Body>
-              <Modal.Footer>
-                <Button as="a" href="https://wa.link/0x9y02" target="_blank">
-                  Beli Sekarang
-                </Button>
-                <Button color="gray" onClick={() => setOpenModal8(false)}>
                   Kembali
                 </Button>
               </Modal.Footer>
