@@ -188,7 +188,7 @@ function KatalogDELL() {
               <div className="space-y-6">
                 <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
                   Spesifikasi Laptop: <br />
-                  Processor: Intel Core i5-6300U <br />
+                  Processor: Intel Core i5-7200U <br />
                   RAM: 8 GB DDR4 <br />
                   Storage: 1 TB HDD <br />
                   Display: 15,6" <br />
