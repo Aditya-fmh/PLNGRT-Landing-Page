@@ -133,7 +133,7 @@ function KatalogToshiba() {
               </h5>
             </a>
             <h5 className="text-center text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-              Rp2.850.000
+              Rp3.250.000
             </h5>
             <Button onClick={() => toggleModal("toshibaU63v2")}>Detail Barang</Button>
             <Modal show={openModals.toshibaU63v2} onClose={() => toggleModal("toshibaU63v2")}>
