@@ -1,7 +1,9 @@
 import { Card, Button, Modal } from "flowbite-react";
 import { useState } from "react";
 
-import L380Image from "../assets/L380-L390.jpg"
+import L13Image from "../assets/L13.jpg"
+import L380Image from "../assets/L380.jpg"
+import L390Image from "../assets/L390.jpg"
 import L450Image from "../assets/L450.jpg";
 import L460Image from "../assets/L460.jpg";
 import T470Image from "../assets/T470.jpg";
@@ -9,6 +11,8 @@ import T470s1Image from "../assets/T470s.jpg";
 import T470s2Image from "../assets/T470s.jpg";
 import T470s3Image from "../assets/T470s.jpg";
 import T480Image from "../assets/T480.jpg";
+import X13Image from "../assets/X13.jpg";
+import X395Image from "../assets/X395.jpg"
 
 function KatalogLenovo () {
     const [openModal1, setOpenModal1] = useState(false);
@@ -27,6 +31,53 @@ function KatalogLenovo () {
           Katalog Laptop Lenovo
         </h2>
         <div className="flex flex-wrap justify-center gap-8">
+        <Card
+            className="max-w-sm"
+            imgAlt="Lenovo L13"
+            imgSrc={L13Image}
+          >
+            <a href="#">
+              <h5 className="text-center text-xl tracking-tight text-gray-900 dark:text-white">
+                Lenovo ThinkPad L13
+              </h5>
+            </a>
+            <h5 className="text-center text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+              Rp4.700.000
+            </h5>
+            <Button onClick={() => setOpenModal1(true)}>Detail Barang</Button>
+            <Modal show={openModal1} onClose={() => setOpenModal1(false)}>
+              <Modal.Header>Lenovo ThinkPad L13</Modal.Header>
+              <Modal.Body>
+                <div className="space-y-6">
+                  <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                    Spesifikasi Laptop: <br />
+                    Processor: Intel Core i5-10210U <br />
+                    RAM: 16 GB DDR4 <br />
+                    Storage: 256 GB SSD <br />
+                    Display: 13,3" (Full HD) <br />
+                    OS: Windows 10/11 (Bisa Request)
+                  </p>
+                  <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                    Kelengkapan: <br />
+                    - Dus Box <br />
+                    - Charger <br />
+                    - Mouse <br />
+                    - Aplikasi Standard <br />
+                    - Garansi Hardware 1 Bulan <br />- Garansi Software 2 Bulan
+                  </p>
+                </div>
+              </Modal.Body>
+              <Modal.Footer>
+                <Button as="a" href="https://wa.link/g7961r" target="_blank">
+                  Beli Sekarang
+                </Button>
+                <Button color="gray" onClick={() => setOpenModal1(false)}>
+                  Kembali
+                </Button>
+              </Modal.Footer>
+            </Modal>
+          </Card>
+        
         <Card
             className="max-w-sm"
             imgAlt="Lenovo L380"
@@ -77,7 +128,7 @@ function KatalogLenovo () {
           <Card
             className="max-w-sm"
             imgAlt="Lenovo L390"
-            imgSrc={L380Image}
+            imgSrc={L390Image}
           >
             <a href="#">
               <h5 className="text-center text-xl tracking-tight text-gray-900 dark:text-white">
@@ -350,6 +401,100 @@ function KatalogLenovo () {
                   Beli Sekarang
                 </Button>
                 <Button color="gray" onClick={() => setOpenModal7(false)}>
+                  Kembali
+                </Button>
+              </Modal.Footer>
+            </Modal>
+          </Card>
+
+          <Card
+            className="max-w-sm"
+            imgAlt="Lenovo ThinkPad X13"
+            imgSrc={X13Image}
+          >
+            <a href="#">
+              <h5 className="text-center text-xl tracking-tight text-gray-900 dark:text-white">
+                Lenovo ThinkPad X13
+              </h5>
+            </a>
+            <h5 className="text-center text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+              Rp4.600.000
+            </h5>
+            <Button onClick={() => setOpenModal3(true)}>Detail Barang</Button>
+            <Modal show={openModal3} onClose={() => setOpenModal3(false)}>
+              <Modal.Header>Lenovo ThinkPad X13</Modal.Header>
+              <Modal.Body>
+                <div className="space-y-6">
+                  <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                    Spesifikasi Laptop: <br />
+                    Processor: Intel Core i5-10210U <br />
+                    RAM: 8 GB DDR4 <br />
+                    Storage: 256 GB SSD <br />
+                    Display: 13,3" Full HD <br />
+                    OS: Windows 10/11 (Bisa Request)
+                  </p>
+                  <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                    Kelengkapan: <br />
+                    - Dus Box <br />
+                    - Charger <br />
+                    - Mouse <br />
+                    - Aplikasi Standard <br />
+                    - Garansi Hardware 1 Bulan <br />- Garansi Software 2 Bulan
+                  </p>
+                </div>
+              </Modal.Body>
+              <Modal.Footer>
+                <Button as="a" href="https://wa.link/qw33er" target="_blank">
+                  Beli Sekarang
+                </Button>
+                <Button color="gray" onClick={() => setOpenModal3(false)}>
+                  Kembali
+                </Button>
+              </Modal.Footer>
+            </Modal>
+          </Card>
+
+          <Card
+            className="max-w-sm"
+            imgAlt="Lenovo ThinkPad X395"
+            imgSrc={X395Image}
+          >
+            <a href="#">
+              <h5 className="text-center text-xl tracking-tight text-gray-900 dark:text-white">
+                Lenovo ThinkPad X395
+              </h5>
+            </a>
+            <h5 className="text-center text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+              Rp3.000.000
+            </h5>
+            <Button onClick={() => setOpenModal8(true)}>Detail Barang</Button>
+            <Modal show={openModal8} onClose={() => setOpenModal8(false)}>
+              <Modal.Header>Lenovo ThinkPad X395</Modal.Header>
+              <Modal.Body>
+                <div className="space-y-6">
+                  <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                    Spesifikasi Laptop: <br />
+                    Processor: AMD Ryzen 3 3300U <br />
+                    RAM: 8 GB DDR4 <br />
+                    Storage: 256 GB SSD <br />
+                    Display: 13,3" Full HD <br />
+                    OS: Windows 10/11 (Bisa Request)
+                  </p>
+                  <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                    Kelengkapan: <br />
+                    - Dus Box <br />
+                    - Charger <br />
+                    - Mouse <br />
+                    - Aplikasi Standard <br />
+                    - Garansi Hardware 1 Bulan <br />- Garansi Software 2 Bulan
+                  </p>
+                </div>
+              </Modal.Body>
+              <Modal.Footer>
+                <Button as="a" href="https://wa.link/hbi49l" target="_blank">
+                  Beli Sekarang
+                </Button>
+                <Button color="gray" onClick={() => setOpenModal8(false)}>
                   Kembali
                 </Button>
               </Modal.Footer>
